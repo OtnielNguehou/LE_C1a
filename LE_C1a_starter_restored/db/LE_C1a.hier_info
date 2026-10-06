@@ -1,0 +1,225 @@
+|LE_C1a
+A[0] <= dual_port_rom:inst.qA[0]
+A[1] <= dual_port_rom:inst.qA[1]
+A[2] <= dual_port_rom:inst.qA[2]
+A[3] <= dual_port_rom:inst.qA[3]
+A[4] <= dual_port_rom:inst.qA[4]
+A[5] <= dual_port_rom:inst.qA[5]
+A[6] <= dual_port_rom:inst.qA[6]
+A[7] <= dual_port_rom:inst.qA[7]
+SW2 => dual_port_rom:inst.addrA[2]
+SW1 => dual_port_rom:inst.addrA[1]
+SW0 => dual_port_rom:inst.addrA[0]
+SW5 => dual_port_rom:inst.addrB[2]
+SW4 => dual_port_rom:inst.addrB[1]
+SW3 => dual_port_rom:inst.addrB[0]
+B[0] <= dual_port_rom:inst.qB[0]
+B[1] <= dual_port_rom:inst.qB[1]
+B[2] <= dual_port_rom:inst.qB[2]
+B[3] <= dual_port_rom:inst.qB[3]
+B[4] <= dual_port_rom:inst.qB[4]
+B[5] <= dual_port_rom:inst.qB[5]
+B[6] <= dual_port_rom:inst.qB[6]
+B[7] <= dual_port_rom:inst.qB[7]
+LED[0] <= arith_circuit:inst2.result[0]
+LED[1] <= arith_circuit:inst2.result[1]
+LED[2] <= arith_circuit:inst2.result[2]
+LED[3] <= arith_circuit:inst2.result[3]
+LED[4] <= arith_circuit:inst2.result[4]
+LED[5] <= arith_circuit:inst2.result[5]
+LED[6] <= arith_circuit:inst2.result[6]
+LED[7] <= arith_circuit:inst2.result[7]
+SW9 => arith_circuit:inst2.opselect[2]
+SW8 => arith_circuit:inst2.opselect[1]
+SW7 => arith_circuit:inst2.opselect[0]
+
+
+|LE_C1a|dual_port_rom:inst
+qA[0] <= rom.DATAOUT
+qA[1] <= rom.DATAOUT1
+qA[2] <= rom.DATAOUT2
+qA[3] <= rom.DATAOUT3
+qA[4] <= rom.DATAOUT4
+qA[5] <= rom.DATAOUT5
+qA[6] <= rom.DATAOUT6
+qA[7] <= rom.DATAOUT7
+qB[0] <= rom.PORTBDATAOUT
+qB[1] <= rom.PORTBDATAOUT1
+qB[2] <= rom.PORTBDATAOUT2
+qB[3] <= rom.PORTBDATAOUT3
+qB[4] <= rom.PORTBDATAOUT4
+qB[5] <= rom.PORTBDATAOUT5
+qB[6] <= rom.PORTBDATAOUT6
+qB[7] <= rom.PORTBDATAOUT7
+addrA[0] => rom.RADDR
+addrA[1] => rom.RADDR1
+addrA[2] => rom.RADDR2
+addrB[0] => rom.PORTBRADDR
+addrB[1] => rom.PORTBRADDR1
+addrB[2] => rom.PORTBRADDR2
+
+
+|LE_C1a|arith_circuit:inst2
+result[0] <= full_adder:fa0.port0
+result[1] <= full_adder:fa1.port0
+result[2] <= full_adder:fa2.port0
+result[3] <= full_adder:fa3.port0
+result[4] <= full_adder:fa4.port0
+result[5] <= full_adder:fa5.port0
+result[6] <= full_adder:fa6.port0
+result[7] <= full_adder:fa7.port0
+OpA[0] => X.DATAA
+OpA[0] => X.DATAB
+OpA[1] => X.DATAA
+OpA[1] => X.DATAB
+OpA[2] => X.DATAA
+OpA[2] => X.DATAB
+OpA[3] => X.DATAA
+OpA[3] => X.DATAB
+OpA[4] => X.DATAA
+OpA[4] => X.DATAB
+OpA[5] => X.DATAA
+OpA[5] => X.DATAB
+OpA[6] => X.DATAA
+OpA[6] => X.DATAB
+OpA[7] => X.DATAA
+OpA[7] => X.DATAB
+OpB[0] => Y.DATAA
+OpB[0] => Y.DATAB
+OpB[1] => Y.DATAA
+OpB[1] => Y.DATAB
+OpB[2] => Y.DATAA
+OpB[2] => Y.DATAB
+OpB[3] => Y.DATAA
+OpB[3] => Y.DATAB
+OpB[4] => Y.DATAA
+OpB[4] => Y.DATAB
+OpB[5] => Y.DATAA
+OpB[5] => Y.DATAB
+OpB[6] => Y.DATAA
+OpB[6] => Y.DATAB
+OpB[7] => Y.DATAA
+OpB[7] => Y.DATAB
+opselect[0] => Y.IN0
+opselect[0] => Equal0.IN2
+opselect[0] => Equal1.IN1
+opselect[0] => Equal2.IN2
+opselect[0] => Equal3.IN2
+opselect[0] => Equal4.IN1
+opselect[0] => Equal5.IN1
+opselect[0] => Equal6.IN2
+opselect[1] => C0.IN0
+opselect[1] => Y.IN1
+opselect[1] => Equal0.IN1
+opselect[1] => Equal1.IN0
+opselect[1] => Equal2.IN0
+opselect[1] => Equal3.IN1
+opselect[1] => Equal4.IN0
+opselect[1] => Equal5.IN2
+opselect[1] => Equal6.IN1
+opselect[2] => C0.IN1
+opselect[2] => Equal0.IN0
+opselect[2] => Equal1.IN2
+opselect[2] => Equal2.IN1
+opselect[2] => Equal3.IN0
+opselect[2] => Equal4.IN2
+opselect[2] => Equal5.IN0
+opselect[2] => Equal6.IN0
+opselect[2] => X.DATAB
+opselect[2] => X.DATAB
+opselect[2] => X.DATAB
+opselect[2] => X.DATAB
+opselect[2] => X.DATAB
+opselect[2] => X.DATAB
+opselect[2] => X.DATAB
+opselect[2] => X.DATAB
+
+
+|LE_C1a|arith_circuit:inst2|full_adder:fa0
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+
+
+|LE_C1a|arith_circuit:inst2|full_adder:fa1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+
+
+|LE_C1a|arith_circuit:inst2|full_adder:fa2
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+
+
+|LE_C1a|arith_circuit:inst2|full_adder:fa3
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+
+
+|LE_C1a|arith_circuit:inst2|full_adder:fa4
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+
+
+|LE_C1a|arith_circuit:inst2|full_adder:fa5
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+
+
+|LE_C1a|arith_circuit:inst2|full_adder:fa6
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+
+
+|LE_C1a|arith_circuit:inst2|full_adder:fa7
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+
+

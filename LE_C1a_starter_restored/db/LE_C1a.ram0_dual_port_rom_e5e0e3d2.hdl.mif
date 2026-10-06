@@ -1,0 +1,19 @@
+-- begin_signature
+-- dual_port_rom
+-- end_signature
+WIDTH=8;
+DEPTH=8;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	7 :	01111000;
+	6 :	01101001;
+	5 :	01011010;
+	4 :	01001011;
+	3 :	00111100;
+	2 :	00101101;
+	1 :	00011110;
+	0 :	00001111;
+END;
