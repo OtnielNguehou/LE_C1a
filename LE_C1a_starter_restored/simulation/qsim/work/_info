@@ -1,0 +1,137 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+Z2 !s12c _opt1
+R1
+R2
+R1
+!s12c _opt2
+R1
+R0
+R1
+R2
+R1
+R0
+R1
+R0
+R1
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 dC:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim
+T_opt
+!i145 1
+!i144 0
+!s110 1791329645
+VS_7CmczO>2H`kU4kCI9Kd1
+Z4 04 18 4 work LE_C1a_vlg_vec_tst fast 0
+=1-c4474ede7493-6ac5856c-2d2-69d4
+R1
+Z5 !s12f OEM100
+Z6 !s12b OEM100
+Z7 !s124 OEM10U2 
+Z8 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc=n
+Z9 tCvgOpt 0 defaultOptions 1107585188
+n@_opt
+Z10 OL;O;2025.2;82
+T_opt1
+!i145 1
+!i144 0
+!s110 1791328026
+V2L=na8TNTE5IIE7O0<CGU0
+R4
+=1-c4474ede7493-6ac57f1a-2e-2504
+R1
+R5
+R6
+R7
+R8
+o-quiet -auto_acc_if_foreign -work work -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc
+R9
+n@_opt1
+R10
+R3
+T_opt2
+!i145 1
+!i144 0
+!s110 1791327849
+VLD3]?ScGj::_cR1fGhFLo3
+R4
+=1-c4474ede7493-6ac57e68-17e-4598
+R1
+R5
+R6
+R7
+R8
+o-quiet -auto_acc_if_foreign -work work -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc=p
+R9
+n@_opt2
+R10
+R3
+vLE_C1a
+2LE_C1a.vo
+Z11 !s110 1791329644
+!i10b 1
+!s100 ILTYV8Q0@Q^HQVbAZ;XM;3
+I1hJb?PahoPkeHT;U]Sm9m2
+R3
+Z12 w1791329642
+8LE_C1a.vo
+FLE_C1a.vo
+!i122 32
+L0 32 967
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+Z14 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z15 !s108 1791329644.000000
+!s107 LE_C1a.vo|
+!s90 -work|work|LE_C1a.vo|
+!i113 0
+Z16 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z17 tCvgOpt 0 defaultOptions 1085333592
+n@l@e_@c1a
+vLE_C1a_vlg_vec_tst
+2Waveform1.vwf.vt
+R11
+!i10b 1
+!s100 J:1K`hPm:iPca><H1zDV<2
+IVa4OHW9`2NGAXhBY9@9z01
+R3
+R12
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 33
+L0 30 122
+R13
+R14
+r1
+!s85 0
+31
+R15
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 0
+R16
+R17
+n@l@e_@c1a_vlg_vec_tst

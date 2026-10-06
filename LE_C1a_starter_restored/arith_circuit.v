@@ -36,12 +36,12 @@ module arith_circuit (result, OpA, OpB, opselect);
 	//subBA(101) (B - A)
 	//the technology mapped output of C0 = opselect[2] + opselect[1]
 	assign C0 = opselect[2] | opselect[1];
-	//Y = 0 when opselect is mova(000) or negA(011) so Yor opeselect[0] and opselect[1]
+	//Y = 0 when opselect is mova(000) or negA(011) so xor opeselect[0] and opselect[1]
 	//Y = ~OpB when opselect is sub(010) or negB(100)
 	//Y = OpB everywhere else
 	assign Y = ((opselect==3'b000) || (opselect==3'b011)) ? {8{(opselect[1] ^ opselect[0])}}: ((opselect==3'b010) || (opselect==3'b100)) ? ~OpB : OpB;
 					
-	//X = 0 when opselect is negB(100) so when opselect[2]==1
+	//X = 0 when opselect is negB(100) so X = ~opselect[2]
 	//X  = ~OpA when subBA(101) or negA(011)
 	//X = OpA everywhere else
 	assign X = ((opselect == 3'b011) || (opselect==3'b101)) ? ~OpA : (opselect==3'b100) ? {8{~opselect[2]}}: OpA;
