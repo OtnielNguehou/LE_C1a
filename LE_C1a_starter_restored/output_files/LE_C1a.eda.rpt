@@ -1,5 +1,5 @@
 EDA Netlist Writer report for LE_C1a
-Tue Oct  6 19:34:02 2026
+Wed Oct  7 19:56:04 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ on the Quartus Prime software download page.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Oct  6 19:34:02 2026 ;
+; EDA Netlist Writer Status ; Successful - Wed Oct  7 19:56:04 2026 ;
 ; Revision Name             ; LE_C1a                                ;
 ; Top-level Entity Name     ; LE_C1a                                ;
 ; Family                    ; MAX 10                                ;
@@ -95,14 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Tue Oct  6 19:34:02 2026
+    Info: Processing started: Wed Oct  7 19:56:04 2026
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
 Info (119006): Selected device 10M50DAF484C7G for design "LE_C1a"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file LE_C1a.vo in folder "C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4676 megabytes
-    Info: Processing ended: Tue Oct  6 19:34:02 2026
+    Info: Processing ended: Wed Oct  7 19:56:04 2026
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

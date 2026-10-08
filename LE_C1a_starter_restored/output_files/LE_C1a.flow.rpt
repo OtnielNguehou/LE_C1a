@@ -1,5 +1,5 @@
 Flow report for LE_C1a
-Tue Oct  6 19:34:02 2026
+Wed Oct  7 23:43:08 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -41,24 +41,24 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Oct  6 19:34:02 2026           ;
+; Flow Status                        ; Flow Failed - Wed Oct  7 23:43:08 2026          ;
 ; Quartus Prime Version              ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                      ; LE_C1a                                          ;
 ; Top-level Entity Name              ; LE_C1a                                          ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M50DAF484C7G                                  ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 27                                              ;
-;     Total combinational functions  ; 27                                              ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 33                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-; UFM blocks                         ; 0                                               ;
-; ADC blocks                         ; 0                                               ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
+; UFM blocks                         ; N/A until Partition Merge                       ;
+; ADC blocks                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -67,7 +67,7 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/05/2026 23:29:24 ;
+; Start date & time ; 10/07/2026 23:42:57 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LE_C1a              ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ on the Quartus Prime software download page.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 110286712488275.179125736315972        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 110286712488275.179143097729340        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; Questa Altera FPGA (Verilog)           ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -96,44 +96,8 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4803 MB             ; 00:00:32                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:00                           ;
-; Total                ; 00:00:32     ; --                      ; --                  ; 00:00:37                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4730 MB             ; 00:00:32                           ;
+; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:32                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -143,42 +107,6 @@ on the Quartus Prime software download page.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Otniel           ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -186,42 +114,6 @@ on the Quartus Prime software download page.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LE_C1a -c LE_C1a --vector_source=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/Waveform1.vwf --testbench_file=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/Waveform1.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/simulation/qsim/ LE_C1a -c LE_C1a
 
 
 

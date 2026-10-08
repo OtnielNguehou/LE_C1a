@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LE_C1a
-Mon Oct  5 23:29:36 2026
+Wed Oct  7 23:43:08 2026
 Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
@@ -10,16 +10,7 @@ Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "arith_circuit:inst2|full_adder:fa7"
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -46,22 +37,22 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct  5 23:29:35 2026           ;
+; Analysis & Synthesis Status        ; Failed - Wed Oct  7 23:43:08 2026               ;
 ; Quartus Prime Version              ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
 ; Revision Name                      ; LE_C1a                                          ;
 ; Top-level Entity Name              ; LE_C1a                                          ;
 ; Family                             ; MAX 10                                          ;
-; Total logic elements               ; 27                                              ;
-;     Total combinational functions  ; 27                                              ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 33                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-; UFM blocks                         ; 0                                               ;
-; ADC blocks                         ; 0                                               ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
+; UFM blocks                         ; N/A until Partition Merge                       ;
+; ADC blocks                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -167,211 +158,13 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                               ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                     ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+---------+
-; rom.txt                          ; yes             ; User File                          ; C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/rom.txt         ;         ;
-; LE_C1a.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/LE_C1a.bdf      ;         ;
-; dual_port_rom.v                  ; yes             ; User Verilog HDL File              ; C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/dual_port_rom.v ;         ;
-; arith_circuit.v                  ; yes             ; User Verilog HDL File              ; C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 27        ;
-;                                             ;           ;
-; Total combinational functions               ; 27        ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 17        ;
-;     -- 3 input functions                    ; 9         ;
-;     -- <=2 input functions                  ; 1         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 27        ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 0         ;
-;     -- Dedicated logic registers            ; 0         ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 33        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; SW9~input ;
-; Maximum fan-out                             ; 17        ;
-; Total fan-out                               ; 150       ;
-; Average fan-out                             ; 1.61      ;
-+---------------------------------------------+-----------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                        ; Entity Name   ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+---------------+--------------+
-; |LE_C1a                    ; 27 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 33   ; 0            ; 0          ; |LE_C1a                                    ; LE_C1a        ; work         ;
-;    |arith_circuit:inst2|   ; 27 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LE_C1a|arith_circuit:inst2                ; arith_circuit ; work         ;
-;       |full_adder:fa0|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LE_C1a|arith_circuit:inst2|full_adder:fa0 ; full_adder    ; work         ;
-;       |full_adder:fa1|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LE_C1a|arith_circuit:inst2|full_adder:fa1 ; full_adder    ; work         ;
-;       |full_adder:fa2|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LE_C1a|arith_circuit:inst2|full_adder:fa2 ; full_adder    ; work         ;
-;       |full_adder:fa3|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LE_C1a|arith_circuit:inst2|full_adder:fa3 ; full_adder    ; work         ;
-;       |full_adder:fa4|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LE_C1a|arith_circuit:inst2|full_adder:fa4 ; full_adder    ; work         ;
-;       |full_adder:fa5|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LE_C1a|arith_circuit:inst2|full_adder:fa5 ; full_adder    ; work         ;
-;       |full_adder:fa6|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LE_C1a|arith_circuit:inst2|full_adder:fa6 ; full_adder    ; work         ;
-;       |full_adder:fa7|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LE_C1a|arith_circuit:inst2|full_adder:fa7 ; full_adder    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------+---------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                            ;
-+----------------------------------------+--------------------------------------+
-; Register name                          ; Reason for Removal                   ;
-+----------------------------------------+--------------------------------------+
-; dual_port_rom:inst|rom~0               ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~1               ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~2               ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~3               ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~4               ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~5               ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~6               ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~7               ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~8               ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~9               ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~10              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~11              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~12              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~13              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~14              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~15              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~16              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~17              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~18              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~19              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~20              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~21              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~22              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~23              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~24              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~25              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~26              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~27              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~28              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~29              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~30              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~31              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~32              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~33              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~34              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~35              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~36              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~37              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~38              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~39              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~40              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~41              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~42              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~43              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~44              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~45              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~46              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~47              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~48              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~49              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~50              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~51              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~52              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~53              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~54              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~55              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~56              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~57              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~58              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~59              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~60              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~61              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~62              ; Stuck at GND due to stuck port clock ;
-; dual_port_rom:inst|rom~63              ; Stuck at GND due to stuck port clock ;
-; Total Number of Removed Registers = 64 ;                                      ;
-+----------------------------------------+--------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |LE_C1a|arith_circuit:inst2|Y[7] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |LE_C1a|arith_circuit:inst2|X[7] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arith_circuit:inst2|full_adder:fa7"                                                 ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 33                          ;
-; cycloneiii_lcell_comb ; 36                          ;
-;     normal            ; 36                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 9                           ;
-;         4 data inputs ; 17                          ;
-;                       ;                             ;
-; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 5.16                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
-    Info: Processing started: Mon Oct  5 23:29:23 2026
+    Info: Processing started: Wed Oct  7 23:42:57 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LE_C1a -c LE_C1a
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -379,9 +172,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file le_c1a.
     Info (12023): Found entity 1: LE_C1a
 Info (12021): Found 1 design units, including 1 entities, in source file dual_port_rom.v
     Info (12023): Found entity 1: dual_port_rom File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/dual_port_rom.v Line: 13
-Info (12021): Found 2 design units, including 2 entities, in source file arith_circuit.v
+Info (12021): Found 4 design units, including 4 entities, in source file arith_circuit.v
     Info (12023): Found entity 1: arith_circuit File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 19
-    Info (12023): Found entity 2: full_adder File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 62
+    Info (12023): Found entity 2: full_adder File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 65
+    Info (12023): Found entity 3: MuxA File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 81
+    Info (12023): Found entity 4: MuxB File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 144
 Info (12127): Elaborating entity "LE_C1a" for the top level hierarchy
 Warning (275089): Not all bits in bus "SW[9..0]" are used
 Warning (275080): Converted elements in bus name "SW" using legacy naming rules. Make any assignments on the new names, not on the original names.
@@ -393,25 +188,25 @@ Warning (10030): Net "rom.data_a" at dual_port_rom.v(17) has no driver or initia
 Warning (10030): Net "rom.waddr_a" at dual_port_rom.v(17) has no driver or initial value, using a default initial value '0' File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/dual_port_rom.v Line: 17
 Warning (10030): Net "rom.we_a" at dual_port_rom.v(17) has no driver or initial value, using a default initial value '0' File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/dual_port_rom.v Line: 17
 Info (12128): Elaborating entity "arith_circuit" for hierarchy "arith_circuit:inst2"
-Info (12128): Elaborating entity "full_adder" for hierarchy "arith_circuit:inst2|full_adder:fa0" File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 50
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276013): RAM logic "dual_port_rom:inst|rom" is uninferred because MIF is not supported for the selected family File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/dual_port_rom.v Line: 17
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "A[7]" is stuck at GND
-    Warning (13410): Pin "A[3]" is stuck at VCC
-    Warning (13410): Pin "B[7]" is stuck at GND
-    Warning (13410): Pin "B[3]" is stuck at VCC
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 60 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 27 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Mon Oct  5 23:29:36 2026
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:32
+Info (12128): Elaborating entity "MuxA" for hierarchy "arith_circuit:inst2|MuxA:muxA" File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 50
+Info (12128): Elaborating entity "MuxB" for hierarchy "arith_circuit:inst2|MuxB:muxB" File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 51
+Error (10028): Can't resolve multiple constant drivers for net "w4" at arith_circuit.v(165) File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 165
+Error (10029): Constant driver at arith_circuit.v(155) File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 155
+Error (10028): Can't resolve multiple constant drivers for net "w5" at arith_circuit.v(166) File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 166
+Error (10029): Constant driver at arith_circuit.v(156) File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 156
+Error (10028): Can't resolve multiple constant drivers for net "w6" at arith_circuit.v(167) File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 167
+Error (10029): Constant driver at arith_circuit.v(157) File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 157
+Error (10028): Can't resolve multiple constant drivers for net "w7" at arith_circuit.v(168) File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 168
+Error (10029): Constant driver at arith_circuit.v(158) File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 158
+Error (10028): Can't resolve multiple constant drivers for net "w8" at arith_circuit.v(169) File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 169
+Error (10029): Constant driver at arith_circuit.v(159) File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 159
+Error (10028): Can't resolve multiple constant drivers for net "w9" at arith_circuit.v(170) File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 170
+Error (10029): Constant driver at arith_circuit.v(160) File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 160
+Error (12152): Can't elaborate user hierarchy "arith_circuit:inst2|MuxB:muxB" File: C:/ECE2544/LE_C1a/LE_C1a/LE_C1a_starter_restored/arith_circuit.v Line: 51
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 13 errors, 9 warnings
+    Error: Peak virtual memory: 4730 megabytes
+    Error: Processing ended: Wed Oct  7 23:43:08 2026
+    Error: Elapsed time: 00:00:11
+    Error: Total CPU time (on all processors): 00:00:32
 
 

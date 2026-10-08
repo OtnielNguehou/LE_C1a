@@ -2,28 +2,28 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 19:34:04 on Oct 06,2026
+# Start time: 19:56:05 on Oct 07,2026
 # vlog -work work LE_C1a.vo 
 # ** Note: (vlog-220) 'C:/altera/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module LE_C1a
 # 
 # Top level modules:
 # 	LE_C1a
-# End time: 19:34:04 on Oct 06,2026, Elapsed time: 0:00:00
+# End time: 19:56:05 on Oct 07,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 19:34:04 on Oct 06,2026
-# vlog -work work Waveform1.vwf.vt 
+# Start time: 19:56:05 on Oct 07,2026
+# vlog -work work Waveform.vwf.vt 
 # ** Note: (vlog-220) 'C:/altera/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module LE_C1a_vlg_vec_tst
 # 
 # Top level modules:
 # 	LE_C1a_vlg_vec_tst
-# End time: 19:34:04 on Oct 06,2026, Elapsed time: 0:00:00
+# End time: 19:56:05 on Oct 07,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # ** Note: (vsim-220) 'C:/altera/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
-# vsim -voptargs="+acc=n" -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.LE_C1a_vlg_vec_tst 
-# Start time: 19:34:04 on Oct 06,2026
+# vsim -voptargs="+acc" -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.LE_C1a_vlg_vec_tst 
+# Start time: 19:56:06 on Oct 07,2026
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vopt-220) 'C:/altera/25.1std/questa_fse/win64/../modelsim.ini' is used as the ini file.
@@ -46,20 +46,8 @@
 # Loading work.LE_C1a(fast)
 # Loading fiftyfivenm_ver.fiftyfivenm_io_obuf(fast)
 # Loading fiftyfivenm_ver.fiftyfivenm_io_ibuf(fast)
-# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast)
-# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__1)
-# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__2)
-# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__3)
-# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__4)
-# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__5)
-# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__6)
-# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__7)
-# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__8)
-# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__9)
-# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__10)
-# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb(fast__11)
 # after#28
-# ** Note: $finish    : Waveform1.vwf.vt(65)
+# ** Note: $finish    : Waveform.vwf.vt(65)
 #    Time: 1 us  Iteration: 0  Instance: /LE_C1a_vlg_vec_tst
-# End time: 19:34:06 on Oct 06,2026, Elapsed time: 0:00:02
+# End time: 19:56:07 on Oct 07,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
