@@ -2,8 +2,7 @@
 // Filename: arith_circuit.v
 // Author:	 KLC, Vivian Wright, Otniel Nguehou Djanmeni
 // Created:	 3 Oct 2019
-// Version:  5 (modified 18 Apr 2026, RCH
-// 				modified 08 Oct 2026, VMW, OND)
+// Version:  4 (modified 18 Apr 2026, RCH)
 // Description: The arithmetic circuit should take the operands OpA, OpB from the  
 // ROM in the top level entity, and the inputs SW[9:7] from the DE10-Lite board 
 // to select the operation.  The output result drives LEDs [7:0] on the DE10-Lite 
